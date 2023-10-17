@@ -1,8 +1,10 @@
 import figlet from "figlet";
 import banner from "./assets/banner.txt";
 
+const port = process.env.PORT || 3000
+
 const server = Bun.serve({
-  port: 3000,
+  port: port,
   fetch(req) {
     console.log(req)
     const body = JSON.stringify({ message: banner })
@@ -13,5 +15,5 @@ const server = Bun.serve({
 console.log(figlet.textSync("Bunny"))
 console.log(`Listening on port ${server.port}...`)
 
-const res = await fetch('http://localhost:3000')
+const res = await fetch(`http://localhost:${port}`)
 console.log(await res.json())
