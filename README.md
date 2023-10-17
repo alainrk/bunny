@@ -26,4 +26,10 @@ bun add <package>
 bun add -D <package>
 ```
 
+Read local env (includes .env)
+
+```sh
+bun run env
+```
+
 This project was created using `bun init` in bun v1.0.3.
