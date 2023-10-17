@@ -11,3 +11,6 @@ const server = Bun.serve({
 
 console.log(figlet.textSync("Bunny"))
 console.log(`Listening on port ${server.port}...`)
+
+const res = await fetch('http://localhost:3000')
+console.log(await res.json())
