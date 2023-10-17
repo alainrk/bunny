@@ -1,10 +1,11 @@
 import figlet from "figlet";
+import banner from "./assets/banner.txt";
 
 const server = Bun.serve({
   port: 3000,
   fetch(req) {
     console.log(req)
-    const body = JSON.stringify({ message: 'Hello World!' })
+    const body = JSON.stringify({ message: banner })
     return new Response(body)
   }
 })
