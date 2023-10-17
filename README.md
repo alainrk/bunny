@@ -1,15 +1,29 @@
-# bunny
+# Bunny
+
+Testing [Bun](https://bun.sh).
+
+## Dev
 
 To install dependencies:
 
-```bash
+```sh
 bun install
 ```
 
 To run:
 
-```bash
-bun run index.ts
+```sh
+bun run start
 ```
 
-This project was created using `bun init` in bun v1.0.3. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+To add packages:
+
+```sh
+# Dependencies
+bun add <package>
+
+# Dev dependencies
+bun add -D <package>
+```
+
+This project was created using `bun init` in bun v1.0.3.
